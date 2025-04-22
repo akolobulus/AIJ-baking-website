@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chopnaija</title>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="images/logo.png"></i> Aij Baking World</a
+      >
+      <nav class="navbar">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#dishes">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#chefs">Contact</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars" aria-label="Menu"></i>
+        <i class="fas fa-search" id="search-icon" aria-label="Search"></i>
+        <a href="#" class="fas fa-user" aria-label="Account"></a>
+        <a href="#cart" class="fas fa-shopping-cart active" aria-label="Cart"></a>
+      </div>
+
+      <!--Search-->
+      <form action="" id="search-form">
+        <input
+          type="search"
+          placeholder="Search here..."
+          name="search"
+          id="search-box"
+        />
+        <label
+          for="search-box"
+          class="fas fa-search"
+          aria-label="Search"
+        ></label>
+        <i class="fas fa-times" id="close" aria-label="Close"></i>
+      </form>
+    </header>
+
+    <section id="order" class="section order">
+        <h2 class="sub-heading">Order Online</h1>
+        <h1 class="heading">Tasty & Delicious</h2>
+
+        <div class="order-container">
+            <section class="cart-section">
+                <h3>Your Cart</h3>
+                <div id="cart">Your cart is empty</div>
+            </section>
+
+            <section class="order-form-section">
+                <h3>Delivery Details</h3>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialInstructions">Special Instructions</label>
+                        <textarea id="specialInstructions" name="specialInstructions"></textarea>
+                    </div>
+<button type="submit" class="btn">Place Order</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+       <!--Footer-->
+       <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>aijbakingworld</h3>
+            <p>
+              creating delicious memories...
+            </p>
+          </div>
+  
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#dishes">Shop</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#menu">Menu</a></li>
+              <li><a href="index.html#chefs">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@aijbakingworld.com</p>
+            <p>Phone: +234 (0) 7042001836</p>
+            <p>Address: 5 Bakery Road, Apapa, Lagos, Nigeria</p>
+          </div>
+  
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" class="fab fa-facebook"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2024 aijbakingworld. All Rights Reserved.</p>
+        </div>
+      </footer>
+    <script src="js/order.js"></script>
+</body>
+</html>

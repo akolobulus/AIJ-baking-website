@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment - Nigerian Payment Gateway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-header">
+            <h2>Complete Your Payment</h2>
+            <p>Secure payment processing powered by Nigerian financial partners</p>
+        </div>
+
+        <div class="payment-methods">
+            <div class="method-tab active" data-method="card" onclick="switchPaymentMethod('card')">
+                <i class="fas fa-credit-card"></i> Credit/Debit Card
+            </div>
+            <div class="method-tab" data-method="transfer" onclick="switchPaymentMethod('transfer')">
+                <i class="fas fa-university"></i> Bank Transfer
+            </div>
+        </div>
+
+        <!-- Card Payment Form -->
+        <form id="cardForm" class="payment-form active">
+            <div class="form-group">
+                <label>Card Number</label>
+                <input type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+            </div>
+
+            <div class="form-group">
+                <label>Card Holder Name</label>
+                <input type="text" placeholder="John Doe">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group" style="flex: 1; margin-right: 1rem;">
+                    <label>Expiry Date</label>
+                    <input type="month" placeholder="MM/YY">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123" maxlength="4">
+                </div>
+            </div>
+
+            <button type="submit" class="pay-button">Pay Now</button>
+        </form>
+
+        <!-- Bank Transfer Form -->
+        <form id="transferForm" class="payment-form">
+            <div class="bank-details">
+                <h3>Our Bank Details</h3>
+                <p><strong>Bank Name:</strong> Zenith Bank</p>
+                <p><strong>Account Name:</strong> AIJ BAKING WORLD</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+            </div>
+
+            <div class="form-group receipt-upload">
+                <label>Upload Payment Receipt</label>
+                <input type="file" accept=".pdf,.jpg,.png">
+            </div>
+
+            <button type="submit" class="pay-button">Confirm Transfer</button>
+        </form>
+
+        <div class="secure-note">
+            <i class="fas fa-lock"></i> 256-bit SSL Secured Payment
+        </div>
+    </div>
+
+    <script>
+        function switchPaymentMethod(method) {
+            // Switch tabs
+            document.querySelectorAll('.method-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[data-method="${method}"]`).classList.add('active');
+
+            // Switch forms
+            document.querySelectorAll('.payment-form').forEach(form => {
+                form.classList.remove('active');
+            });
+            document.getElementById(`${method}Form`).classList.add('active');
+        }
+
+        // Card Validation
+        document.getElementById('cardForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const cardNumber = this.querySelector('input[type="text"]').value.replace(/\s/g, '');
+            
+            if (!validateCardNumber(cardNumber)) {
+                alert('Please enter a valid card number');
+                return;
+            }
+
+            // Add actual payment processing logic here
+            alert('Payment processing... (Simulated)');
+        });
+
+        function validateCardNumber(number) {
+            // Simple Luhn algorithm validation
+            let sum = 0;
+            let shouldDouble = false;
+            
+            for (let i = number.length - 1; i >= 0; i--) {
+                let digit = parseInt(number.charAt(i), 10);
+                
+                if (shouldDouble) {
+                    if ((digit *= 2) > 9) digit -= 9;
+                }
+                
+                sum += digit;
+                shouldDouble = !shouldDouble;
+            }
+            
+            return sum % 10 === 0 && number.length >= 13;
+        }
+
+        // Bank Transfer Handling
+        document.getElementById('transferForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const receipt = this.querySelector('input[type="file"]').files[0];
+            
+            if (!receipt) {
+                alert('Please upload your payment receipt');
+                return;
+            }
+
+            // Add receipt verification logic here
+            alert('Transfer confirmation received. We will verify your payment shortly.');
+        });
+    </script>
+</body>
+</html>

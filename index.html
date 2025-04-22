@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aijbakingworld</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <a href="#" class="logo"
+        ><img src="images/logo.png "> Aij Baking World</a
+      >
+      <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#dishes">About</a>
+        <a href="#about">Shop</a>
+        <a href="#menu">Menu</a>
+        <a href="#chefs">Contact</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars" aria-label="Menu"></i>
+        <i class="fas fa-search" id="search-icon" aria-label="Search"></i>
+        <a href="#" class="fas fa-user" aria-label="Account"></a>
+        <a
+          href="order.html#cart"
+          class="fas fa-shopping-cart"
+          aria-label="Cart"
+        ></a>
+      </div>
+
+      <!--Search-->
+      <form action="" id="search-form">
+        <input
+          type="search"
+          placeholder="Search here..."
+          name="search"
+          id="search-box"
+        />
+        <label
+          for="search-box"
+          class="fas fa-search"
+          aria-label="Search"
+        ></label>
+        <i class="fas fa-times" id="close" aria-label="Close"></i>
+      </form>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+      <div class="homeSlider">
+        <div class="wrapper">
+          <div class="slides">
+            <div class="slide">
+              <div class="content">
+                <span>Our Services</span>
+                <h3>CAKES</h3>
+                <p>We make delicious cakes for all occasions—birthdays, weddings, anniversaries, and more customized just the way you love them!.</p>
+                <a href="order.html" class="btn order-now" data-item-id="1"
+                  >Order Now</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/cake.jpg" alt="cake" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <span>Our Services</span>
+                <h3>Small Chops</h3>
+                <p>
+                  We prepare a delightful assortment of small chops for every occasion-birthdays, weddings, corporate events, and more—freshly made to wow your guests!
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="2"
+                  >Order Now</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/small-chops.jpg" alt="small chops" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="content">
+                <span>Our Services</span>
+                <h3>Chin-chin</h3>
+                <p>
+                  Premium baking accessories for perfect results every time.
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="3"
+                  >Order Now</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/chin chi.jpg" alt="chin-chin" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="content">
+                <span>Our Services</span>
+                <h3>Accessories</h3>
+                <p>
+                  Premium baking accessories for perfect results every time.
+                </p>
+                <a href="order.html" class="btn order-now" data-item-id="3"
+                  >Order Now</a
+                >
+              </div>
+              <div class="image">
+                <img src="images/food/baking-tool.jpg" alt="baking-tool" />
+              </div>
+            </div>
+
+          </div>
+          <div class="dots">
+            <span
+              class="dot"
+              onclick="currentSlide(0)"
+              aria-label="Slide 1"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(1)"
+              aria-label="Slide 2"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(2)"
+              aria-label="Slide 3"
+            ></span>
+            <span
+              class="dot"
+              onclick="currentSlide(3)"
+              aria-label="Slide 4"
+            ></span>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- About -->
+     <section class="about" id="about">
+      <h3 class="sub-heading">About Us</h3>
+      <h1 class="heading">Why Choose Us?</h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/about2.jpg" alt="About Us" />
+        </div>
+        <div class="content">
+          <h3>Aij Baking World</h3>
+          <p>
+            We combine passion, expertise, and top‑quality ingredients to deliver exceptional cakes, small chops,chin-chin and baking accessories—each tailored to your unique needs, backed by professional service, reliable delivery, and a dedication to making every event truly memorable.
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast" aria-label="Fast Delivery"></i>
+              <span>Fast Delivery</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-gift" aria-label="Gift Options"></i>
+              <span>Custom packaging</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-tag" aria-label="Special Offers"></i>
+              <span>Special Offers</span>
+            </div>
+          </div>
+          <a href="#" class="btn" aria-label="Learn More">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Dishes -->
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">Our Specials</h3>
+      <h1 class="heading">top picks</h1>
+      <div class="box-container">
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add chin-chin to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View chin-chin"></a>
+          <img src="images/food/chin.jpg" alt="chin-chin" />
+          <h3>Chin-chin</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦1500.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="6"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add puff-puff to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View puff-puff"></a>
+          <img src="images/food/puff-puff.jpg" alt="puff-puff" />
+          <h3>puff-puff</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦1800.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="7"
+            aria-label="Add to Cart"
+          >
+            Add to Cart
+          </a>
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add chocolate birthday_cake to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="chocolate birthday cake"></a>
+          <img src="images/food/Chocolate-Birthday-Cake-Recipe8.jpg" alt="chocolate birthday cake" />
+          <h3>chocolate birthday cake</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦40,000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="8"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add friut-cake to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View Friut cake"></a>
+          <img src="images/food/friut-cake.webp" alt="friut cake" />
+          <h3>Fruit Cake</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦25,000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="9"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add rose wedding cake to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View rose wedding cake"></a>
+          <img src="images/food/wedding cake.jpg" alt="Rose-Vanilla wedding cake" />
+          <h3>Rose-Vanilla wedding cake</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+          </div>
+          <span>₦30,000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="10"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add Classic Vanilla cup cake to favorites"
+          ></a>
+          <a
+            href="#"
+            class="fas fa-eye"
+            aria-label="View Classic Vanilla cup cake"
+          ></a>
+          <img src="images/food/20240723_SEA_Classic-Vanilla-Cupcake.jpg" alt="classic banilla cup-cake" />
+          <h3>Classic Vanilla cup-cake</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦3900.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="11"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add tier cake to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="View tier cakes"></a>
+          <img src="images/food/tier cakes.webp" alt="tier cakes" />
+          <h3>Custom sprinkled Tier cakes</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦150,000.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="12"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+
+        <div class="box">
+          <a
+            href="#"
+            class="fas fa-heart"
+            aria-label="Add meatpie to favorites"
+          ></a>
+          <a href="#" class="fas fa-eye" aria-label="meatpie"></a>
+          <img src="images/food/meat-pie.jpg" alt="meat-pie" />
+          <h3>Flaky meat-pie</h3>
+          <div class="stars">
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+            <i class="fas fa-star" aria-label="Star"></i>
+          </div>
+          <span>₦4500.00</span>
+          <a
+            href="order.html"
+            class="btn add-to-cart"
+            data-item-id="13"
+            aria-label="Add to Cart"
+            >Add to Cart</a
+          >
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">  Our</h3>
+      <h1 class="heading">Cake Varieties</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/food/birthday_cake.jpg" alt="birthday_cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add birthday_cake to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Birthday cake</h3>
+            <p>Often themed for children (e.g., cartoons) or adults (e.g., elegant designs).</p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="14"
+              aria-label="Add birthday_cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦55,00.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/wedding cake.jpg" alt="wedding_cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add wedding_cake favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Wedding Cake</h3>
+            <p>
+              Can be multi-tiered and elaborate.
+            </p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="15"
+              aria-label="Add wedding_cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦150,500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/Puff-Cake-FI.webp" alt="cream puff cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add cream puff cake to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Cream puff cake</h3>
+            <p>Puff-puff dough used in a cake-like format.</p>
+            <a href="#" class="btn" aria-label="Add cream puff cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦35,000.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/friut-cake.webp" alt="friut-cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add friut-cake to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Fruit Cake</h3>
+            <p>Popular during holidays and special occasions.</p>
+            <a href="#" class="btn" aria-label="Add fruit cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦35,000.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/20240723_SEA_Classic-Vanilla-Cupcake.jpg" alt="cup-cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add cup-cake to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Classic-Vanilla-Cupcake</h3>
+            <p>Individual small cakes, often decorated with frosting.</p>
+            <a href="#" class="btn" aria-label="Add cup-cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/orange-cream-layer-cake-600x600.jpg" alt="layer cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add layer cake to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Orange-cream Layer cake</h3>
+            <p>Multiple cake layers filled with frosting and often decorated.p>
+            <a href="#" class="btn" aria-label="Add layer cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦65,000.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/tier cakes.webp" alt="tier cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add tier cake to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Tier Cakes</h3>
+            <p> Multi-tiered cakes for large celebrations.p>
+            <a href="#" class="btn" aria-label="Add tier cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦18,5500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/truffle-5.webp" alt="chocolate truffel cake" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add truffel to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>chocolate truffel cake</h3>
+            <p>
+              Layers of gluten-free chocolate sponge with creamy chocolate buttercream glazed with dark chocolate, topped with caramel and salted chocolate almond ..
+            </p>
+            <a href="#" class="btn" aria-label="Add Moi Moi to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦85,000.00</span>
+          </div>
+        </div>
+        <!-- <div class="box">
+          <div class="image">
+            <img src="images/food/Ekpang-Nkukwo.jpg" alt="Ekpang Nkukwo" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add Ekpang Nkukwo to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Ekpang Nkukwo</h3>
+            <p>A pottage made with grated cocoyam and wrapped in leaves.</p>
+            <a href="#" class="btn" aria-label="Add Ekpang Nkukwo to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦3500.00</span>
+          </div> --->
+        </div>
+        <button class="btn" style="position: relative;">View More ></button>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">Our</h3>
+      <h1 class="heading">Small-chops Varieties</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/food/spring.jpg" alt="spring rolls" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add spring rolls to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Spring-rolls and Samosa</h3>
+            <p>Savory pastry rolls filled with spiced vegetables or meat</p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="14"
+              aria-label="Add spring roll to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦5,00.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/mini-sausage-rolls-3.jpg" alt="mini-sausage-rolls" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add mini-sausage-rolls to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Mini sausage and ham party rolls</h3>
+            <p>
+              Small pastry rolls filled with sausage.
+            </p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="15"
+              aria-label="Add wedding_cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦1,500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/chin.jpg" alt="Chin-chin" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add cream chin-chin to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Chin-chin</h3>
+            <p>Crunchy, sweet fried dough snacks.</p>
+            <a href="#" class="btn" aria-label="Add cream puff cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">1,000.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/chicken-pie.jpeg" alt="chicken-pie" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add chicken-pie to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>Chicken and Meat Pie</h3>
+            <p> Savory pastry filled with chicken or meat.</p>
+            <a href="#" class="btn" aria-label="Add fruit cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦1,800.00</span>
+          </div>
+        </div>
+        <!--
+        
+          </div> --->
+        </div>
+        <button class="btn" style="position: relative;">View More ></button>
+      </div>
+    </section>
+    
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">Our</h3>
+      <h1 class="heading">Baking accessories</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/food/cakepan.jpg" alt="cake-pan" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add cake-pan to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Baking Pans Set</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="14"
+              aria-label="Add spring roll to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦150,000.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/measuring-cup.jpg" alt="measuring cup" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add measuring-cup to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>measuring-cup and spoon set</h3>
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a
+              href="order.html"
+              class="btn add-to-cart"
+              data-item-id="15"
+              aria-label="Add wedding_cake to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦25,500.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/piping.jpg" alt="piping" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add cream piping to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star-half-alt" aria-label="Half Star"></i>
+            </div>
+            <h3>Riccle Piping Bags and Tips Set</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#" class="btn" aria-label="Add cream piping to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦5,000.00</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="images/food/carrier.jpg" alt="carrier" />
+            <a
+              href="#"
+              class="fas fa-heart"
+              aria-label="Add carrier to favorites"
+            ></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+              <i class="fas fa-star" aria-label="Star"></i>
+            </div>
+            <h3>2 Tier Cupcake Carrier</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn" aria-label="Add carrier to Cart"
+              >Add to Cart</a
+            >
+            <span class="price">₦13,800.00</span>
+          </div>
+        </div>
+        <!--
+      
+          </div> --->
+        </div>
+        <button class="btn" style="position: relative;">View More ></button>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="chefs" class="chef-carousel">
+      <h3 class="chef-sub-heading">Our Services</h3>
+      <h1 class="chef-heading">We Offer</h1>
+
+      <div class="chef-slider">
+        <div class="chef-wrapper">
+          <div class="chef-slide">
+            <div class="chef-user">
+              <img src="images/food/cake.jpg" alt="cakes" />
+              <div class="chef-user-info">
+                <h3>CAKES</h3>
+                <div class="chef-stars">
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                </div>
+                <p>
+                  Delight in every slice with our handcrafted cakes made for your special moments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chef-slide">
+            <div class="chef-user">
+              <img src="images/food/small-chops.jpg" alt="small-chops" />
+              <div class="chef-user-info">
+                <h3>Small-chops</h3>
+                <div class="chef-stars">
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                </div>
+                <p>
+                  Our small chops platters—puff‑puff, spring rolls, suya, and more—are crafted fresh to elevate any event.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chef-slide">
+            <div class="chef-user">
+              <img src="images/food/baking-tool.jpg" alt="baking" />
+              <div class="chef-user-info">
+                <h3>baking-accesories</h3>
+                <div class="chef-stars">
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                  <i class="fas fa-star" aria-label="Star"></i>
+                </div>
+                <p>
+                  Equip your kitchen with high‑quality baking tools—precision scales, durable rolling pins, versatile spatulas, and reliable mixers—to ensure perfect bakes every time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Aij Baking World</h3>
+          <p>
+            Creating delicious memories.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dishes">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Order</a></li>
+            <li><a href="#chefs">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@aijbakingworld.com</p>
+          <p>Phone: +234 (0) 7042001836</p>
+          <p>Address: 5 bakery Road, Apapa, Lagos, Nigeria</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Aij Baking World. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+  </body>
+</html>
